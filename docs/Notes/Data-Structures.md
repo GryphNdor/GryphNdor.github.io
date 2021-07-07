@@ -1,3 +1,11 @@
+---
+id: data-structures
+title: Data Structures
+sidebar_position: 2
+slug: /notes/data-structures
+custom_edit_url: null
+---
+
 
 export const Highlight = ({children, color, fontColor}) => (
   <span
@@ -11,7 +19,6 @@ export const Highlight = ({children, color, fontColor}) => (
   </span>
 );
 
-# Data Structure Cheatsheet
 
 :::tip Heads Up
 btw this is in java so [pass-by-value](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
@@ -42,9 +49,25 @@ numbers[0]
 //1
 ```
 *note*: Another valid way of writing `int[] numbers` could be `int numbers[]` in java
-- Arrays can also be multi-dimensional
+```java
+int[][] numbers = {
+                    {1,2,3,4,5},
+                    {1,2,3,4,5}
+                                };
+            or
+int[][] numbers = new int[5][5];
 
+// numbers[row][col]
+numbers[0][0]
+//1
 
+//row major order
+for(int i = 0; i < numbers.length; i++){
+  for(int j = 0; j < numbers[i].length; j++){
+    System.out.println(numbers[i][j]);
+  }
+}
+```
 ### **ArrayList**
 - Classical version of an Array
 - The bigger brother of an Array 💪

@@ -1,35 +1,11 @@
 ---
+id: intro
+title: Introduction
 sidebar_position: 1
+slug: /
+custom_edit_url: null
 ---
 
-# Tutorial Intro
+# Introduction 
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+Welcome to my humble abode. Here is a bunch of stuff that I have been doing/building in my free time. I use VSCode as my IDE and my projects are a work in progress. I hope to use this website as a place to document and log all the various stuff that I am learning/doing on my coding journey! 

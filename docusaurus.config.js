@@ -5,14 +5,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/palenight');
 module.exports = {
   title: 'Computer Science Stuff',
   tagline: 'Dinosaurs are cool',
-  url: 'https://GryphNdor.github.io.',
+  url: 'https://GryphNdor.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'GryphNdor', // Usually your GitHub org/user name.
   projectName: 'GryphNdor.github.io', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      switchConfig:{
+        darkIcon:'🌙',
+        lightIcon: '☀️',
+      }
+    },
     navbar: {
       title: 'Computer Science Stuff',
       logo: {
@@ -24,65 +33,25 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Projects',
         },
         {
-          to: "/data-structures",
-          label: "Data Structures",
-          position: "left"
+          label: 'Notes',
+          position: 'left', // or 'right'
+          items: [
+            {
+              label: 'Data Structures',
+              href: '../Notes/Data-Structures',
+            },
+            // ... more items
+          ],
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/GryphNdor',
           label: 'GitHub',
           position: 'right',
         },
       ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       additionalLanguages: ['java'],
@@ -97,14 +66,9 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          routeBasePath: '/',
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
