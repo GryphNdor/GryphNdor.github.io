@@ -44,7 +44,7 @@ export const Highlight = ({children, color, fontColor}) => (
 
 ### To-Dos
 - [ ] Adding swipe direction (aka setting left/right & spiking left/right)
-- [ ] Player Avatar movement
-- [ ] Implement Pause Buttom
+- [x] Player Avatar movement
+- [x] Implement Pause Buttom
 - [x] Menu + Scene Switcher
 - [ ] SFX
