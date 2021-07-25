@@ -20,8 +20,8 @@ export const Highlight = ({children, color, fontColor}) => (
 );
 
 
-:::tip Heads Up
-btw this is in java so [pass-by-value](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
+:::note
+this is in java so [pass-by-value](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
 :::
 
 ## __Random Access Data Structures__
