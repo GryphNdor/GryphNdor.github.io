@@ -1,19 +1,20 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <nav>
         <h3 className="nav-title">
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </h3>
         <ul className="nav-list">
           <li>
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/notes">Notes</a>
+            <Link href="/notes">Notes</Link>
           </li>
         </ul>
       </nav>
