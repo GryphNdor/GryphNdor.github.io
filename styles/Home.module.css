@@ -1,0 +1,52 @@
+.content {
+  margin-top: 150px;
+  display: grid;
+  place-items: center;
+}
+
+.hero {
+  border: 5px #98c379 solid;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 38px;
+  padding: 0px;
+  line-height: 100%;
+}
+
+.blurb {
+  padding: 0;
+  font-size: 20px;
+  width: 20%;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-between;
+  font-size: 36px;
+  color: #4a7197;
+}
+
+.listItem {
+  padding: 5px 10px;
+}
+
+.listItem:hover {
+  color: #6791ba;
+}
+
+@media screen and (max-width: 1000px) {
+  .blurb {
+    padding: 0;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+  }
+}
