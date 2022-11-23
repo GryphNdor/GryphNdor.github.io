@@ -17,7 +17,7 @@ a {
 }
 
 nav {
-  background-color: #383838;
+  background-color: #afaeae;
   height: 7vh;
   display: flex;
   align-items: center;
@@ -50,6 +50,9 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
+  nav {
+    background-color: #383838;
+  }
   html {
     color-scheme: dark;
   }
